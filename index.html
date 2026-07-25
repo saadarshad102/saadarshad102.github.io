@@ -1,523 +1,607 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saad Arshad - Senior AI/ML Engineer</title>
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saad Arshad — Senior AI/ML Engineer</title>
+<meta name="description" content="Saad Arshad — Senior AI/ML Engineer specializing in NLP, agentic AI, and production LLM systems." />
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root{
+    --ink:#0E1023;
+    --surface:#161A38;
+    --surface-2:#1D2246;
+    --line:#2B3164;
+    --text:#EDEFF7;
+    --muted:#9AA0C3;
+    --amber:#FFB454;
+    --teal:#6EE7D8;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk', sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  a{ color:inherit; text-decoration:none; }
+  .container{ max-width:1040px; margin:0 auto; padding:0 28px; }
+  ::selection{ background:var(--amber); color:var(--ink); }
 
-<body>
-  <div id="mobile-menu-open" class="shadow-large">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-  <!-- End #mobile-menu-toggle -->
-  <header>
-    <div id="mobile-menu-close">
-      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-    <ul id="menu" class="shadow">
-      <li>
-        <a href=" #about">About</a>
-      </li>
-      <li>
-        <a href="#experience">Experience</a>
-      </li>
-      <li>
-        <a href="#education">Education</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li>
-        <a href="#publications">Publications</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-  </header>
-  <!-- End header -->
+  /* NAV */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(14,16,35,0.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1040px; margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-brand{ font-weight:600; font-size:15px; }
+  .nav-brand .dot{ color:var(--amber); }
+  .nav-links{ display:flex; gap:26px; list-style:none; margin:0; padding:0; }
+  .nav-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--muted); transition:color .2s;
+  }
+  .nav-links a:hover{ color:var(--amber); }
+  #nav-toggle{ display:none; }
+  .burger{ display:none; font-size:20px; color:var(--text); cursor:pointer; }
 
-  <div id="lead">
-    <div id="lead-content">
-      <h1>Saad Arshad</h1>
-      <h2 style="color: black;">Senior AI/ML Engineer &mdash; NLP, Agentic AI &amp; LLMs</h2>
-      <!-- <a href="" class="btn-rounded-white">Download Resume</a> -->
-      <div class="col-sm-8 social">
-        <ul>
-          <li>
-            <a href="https://github.com/saadarshad102" target="_blank"><i class="fa fa-github fa-flag"
-                aria-hidden="true" style="font-size:30px; color: cornsilk; "></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/saadarshad102/" target="_blank"><i class="fa fa-linkedin fa-flag"
-                aria-hidden="true" style="font-size:30px; color: cornsilk; "></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/saad.arshad.944" target="_blank"><i class="fa fa-facebook fa-flag"
-                aria-hidden="true" style="font-size:30px; color: cornsilk; "></i></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@saad.arshad102" target="_blank"><i class="fa fa-medium fa-flag"
-                aria-hidden="true" style="font-size:30px; color: cornsilk; "></i></a>
-          </li>
-          <li>
-            <a href="mailto:saad.arshad102@gmail.com" target="_blank"><i class="fa fa-envelope fa-flag"
-                aria-hidden="true" style="font-size:30px; color: cornsilk; "></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-
-    <!-- End #lead-content -->
-
-    <div id="lead-overlay"></div>
-
-    <div id="lead-down">
-      <span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-      </span>
-    </div>
-    <!-- End #lead-down -->
-  </div>
-  <!-- End #lead -->
-
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="heading" style="margin-left: 20%">About Me
-            <br>
-          </h2>
-          <img class="profile-pic" style="margin-left: 8%" src="images/profilepic.jpg" alt="" />
-        </div>
-        <div class="col-md-7">
-          <h4 style="text-align: justify;">
-            Highly accomplished AI/ML Engineer with over 6 years of experience
-            specializing in Natural Language Processing (NLP), Agentic AI, and
-            Large Language Models (LLMs). Proven expertise in the end-to-end
-            design, development, and deployment of scalable, production-ready
-            AI solutions.
-          </h4>
-          <h4 style="text-align: justify;">
-            I thrive in async-first teams and have been working remotely with
-            international companies since 2019. I'm currently the AI (NLP)
-            Technical Lead at Intelligent Relations, where I lead the
-            architecture of Preston, an AI-powered PR automation platform.
-          </h4>
-          <h4 style="text-align: justify;">
-            I'm based in Islamabad, Pakistan, and I'm also building Authr, a
-            content-intelligence SaaS that crawls a brand's blog and
-            competitor blogs, clusters content into a vector space, identifies
-            coverage gaps, clones brand voice, and drafts SEO-linked posts.
-          </h4>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- End #about -->
-
-
-  <div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
-    <div id="experience-timeline">
-      <div data-date="Mar 2024 - Present">
-        <h3 style="
-        font-weight: 400">Intelligent Relations</h3>
-        <h4 style="
-        font-weight: 400">AI (NLP) Technical Lead &middot; Remote</h4>
-        <p>
-          <li>
-            Led the end-to-end architecture and deployment of Preston, an
-            AI-powered PR automation platform delivering multi-agent chat,
-            automated journalist outreach and replies, media monitoring,
-            semantic search-based recommendations, and personalized pitch
-            generation
-          </li>
-          <li>
-            Built a multi-agent chat interface enabling users to perform any
-            platform action through natural language, including searching
-            journalists, launching campaigns, monitoring media coverage, and
-            generating pitches
-          </li>
-          <li>
-            Designed a campaign creation workflow that reduced manual effort
-            by 90%, automating journalist targeting, pitch drafting,
-            follow-up strategy, and top journalist recommendations
-          </li>
-          <li>
-            Built PR Deep Dive, an agent-based research automation system
-            generating context-aware PR strategies, cutting manual research
-            effort from hours to minutes
-          </li>
-          <li>
-            Developed a hierarchical categorization system spanning 900+
-            categories, improving search efficiency and relevance by 25%
-          </li>
-          <li>
-            Managed the full MLOps lifecycle across AWS (Fargate, Lambda,
-            EC2), Docker, and FastAPI, ensuring reliable model serving and
-            scalable infrastructure platform-wide
-          </li>
-        </p>
-      </div>
-      <div data-date="Jun 2022 - Mar 2024">
-        <h3 style="
-        font-weight: 400">Intelligent Relations</h3>
-        <h4 style="
-        font-weight: 400">ML/NLP Engineer &middot; Remote</h4>
-        <p>
-          <li>
-            Engineered high-throughput NLP pipelines analyzing 9&ndash;10
-            million articles per month to build and maintain dynamic profiles
-            for 500,000+ journalists, publications, and podcasts
-          </li>
-          <li>
-            Developed an AI pitch generator that analyzes successful pitches
-            to generate on-brand outreach emails, reducing pitch writing time
-            by 80%
-          </li>
-          <li>
-            Developed a journalist recommendation engine that dynamically
-            updates query representations using user feedback and engagement
-            signals
-          </li>
-          <li>
-            Developed Chat with Preston, an LLM-powered assistant capable of
-            answering complex PR-related queries
-          </li>
-        </p>
-      </div>
-      <div data-date="Nov 2021 - Jun 2022">
-        <h3 style="
-        font-weight: 400">Lahore University of Management Sciences (LUMS)</h3>
-        <h4 style="
-        font-weight: 400">Graduate Research Assistant &middot; Onsite</h4>
-        <p>
-          <li>
-            Collected and curated the first benchmark dataset for Urdu
-            abstractive news summarization, comprising 180,000 news and
-            summary pairs
-          </li>
-          <li>
-            Performed lossless compression and language adaptation of the
-            mT5 model, reducing parameters by 50% while maintaining accuracy
-          </li>
-          <li>
-            Pre-trained mT5 using a denoising objective and fine-tuned it to
-            generate high-quality abstractive summaries, significantly
-            improving ROUGE scores
-          </li>
-        </p>
-      </div>
-      <div data-date="Sep 2020 - Nov 2021">
-        <h3 style="
-        font-weight: 400">Vertical Solutions</h3>
-        <h4 style="
-        font-weight: 400">ML/NLP Engineer &middot; Remote</h4>
-        <p>
-          <li>
-            Trained multi-label text classification models to accurately
-            categorize legal invoice clauses
-          </li>
-          <li>
-            Developed a scoring and recommendation pipeline for legal
-            contract clauses
-          </li>
-          <li>
-            Fine-tuned semantic similarity models to detect and correct
-            wrong legal codes
-          </li>
-        </p>
-      </div>
-      <div data-date="May 2019 - Sep 2020">
-        <h3 style="
-        font-weight: 400">Automotive Artificial Intelligence (AAI) GmbH</h3>
-        <h4 style="
-        font-weight: 400">ML/NLP Engineer &middot; Remote</h4>
-        <p>
-          <li>
-            Developed and deployed a domain-specific conversational AI system
-            with integrated speech recognition and synthesis
-          </li>
-          <li>Managed API development and deployment on AWS infrastructure</li>
-          <li>
-            Fine-tuned object detection models for industry-specific
-            automotive use cases
-          </li>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End #experience -->
-
-  <div id="education">
-    <h2 class="heading">Education</h2>
-    <div class="education-block">
-      <h3>Lahore University of Management Sciences (LUMS)</h3>
-      <span class="education-date">2020 - 2022</span>
-      <h4>MS in Computer Science</h4>
-      <p>
-        Thesis: "Urdu Abstractive News Summarization" &mdash; curated a
-        180k-pair dataset, pre-trained &amp; compressed mT5 (50% parameter
-        reduction) with preserved ROUGE scores.
-        <br />
-        GPA: 3.84 | Major: AI, NLP | Dean's Honour List
-      </p>
-    </div>
-    <!-- End .education-block -->
-
-    <div class="education-block">
-      <h3>National University of Computer and Emerging Sciences FAST</h3>
-      <span class="education-date">2015 - 2019</span>
-      <h4>BS in Computer Science</h4>
-      <p>
-        GPA: 3.59
-        <br />
-        Dean's List: Fall 2015, 2017 &amp; 2018 &mdash; Spring 2018 &amp; 2019
-      </p>
-    </div>
-    <!-- End .education-block -->
-  </div>
-  <!-- End #education -->
-
-  <div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info ">
-              <h3>Preston</h3>
-              <p>
-                AI-powered PR automation platform delivering multi-agent chat,
-                automated journalist outreach, media monitoring, semantic
-                search-based recommendations, and personalized pitch
-                generation &mdash; cutting campaign workflow effort by 90%.
-              </p>
-              <br>
-            </div>
-          </div>
-        </div>
-        <!-- End .project -->
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info">
-              <h3>KeyCrew</h3>
-              <p>
-                Led development of KeyCrew's AI article generation system,
-                producing perspective, feature, consumer, and press release
-                content from interview transcripts, plus a sales intelligence
-                pipeline identifying potential clients from article content
-                and expert mentions.
-              </p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End .project-info -->
-      </row>
-      <div class="row">
-        <!-- End .project-info -->
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info ">
-              <h3>Authr</h3>
-              <p>
-                A content-intelligence SaaS that crawls a brand's blog and
-                competitor blogs, clusters content into a vector space,
-                identifies coverage gaps, clones brand voice, and drafts
-                SEO-linked posts.
-              </p>
-              <br>
-            </div>
-          </div>
-        </div>
-        <!-- End .project-info -->
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info">
-              <h3>Retrieval Pipeline Evaluation</h3>
-              <p>
-                Comparative analysis of dense, sparse, RRF, and DBSF retrieval
-                methods for a PR/media monitoring product, resulting in a
-                production multi-query merge algorithm with tier-based
-                deduplication and recency tiebreaking.
-              </p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End .project-info -->
-      </row>
-      <div class="row">
-        <!-- End .project-info -->
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info ">
-              <h3>Fake News Detection (USE)</h3>
-              <p>
-                Fake news detection using Google's Universal Sentence Encoder and a simple neural network
-              </p>
-              <br>
-              <a href="https://github.com/saadarshad102/Fake-News-Detection-Universal-Sentence-Encoder" target="_blank" class="button button4">View on Github</a>
-            </div>
-          </div>
-        </div>
-        <!-- End .project-info -->
-        <div class="col-md-6">
-          <div class="project shadow-large">
-            <div class="project-info">
-              <h3>Chatbot (Seq2Seq)</h3>
-              <p>
-                A chatbot developed using seq2seq encoder-decoder
-              </p>
-              <br>
-              <br>
-              <a href="https://github.com/saadarshad102/Chatbot-Seq2Seq" target="_blank" class="button button4">View on Github</a>
-            </div>
-          </div>
-        </div>
-        </row>
-      </div>
-      </div>
-      <!-- End #projects -->
-    </div>
-  </div>
-  <div id="skills" class="background-alt">
-    <h2 class="heading">Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Large Language Models</li>
-      <li>Transformers</li>
-      <li>Retrieval-Augmented Generation</li>
-      <li>Semantic Search</li>
-      <li>Embeddings</li>
-      <li>AI Agents / Agentic Workflows</li>
-      <li>Prompt Engineering</li>
-      <li>LoRA / PEFT / Model Quantization</li>
-      <li>Docker</li>
-      <li>FastAPI</li>
-      <li>Model Deployment &amp; Monitoring</li>
-      <li>PyTorch</li>
-      <li>Hugging Face</li>
-      <li>LangChain</li>
-      <li>Scikit-Learn</li>
-      <li>SpaCy</li>
-      <li>Pandas</li>
-      <li>AWS (EC2, S3, Bedrock, Fargate, Lambda)</li>
-      <li>PostgreSQL</li>
-      <li>MongoDB</li>
-      <li>Vector &amp; Semantic Databases</li>
-      <li>Pinecone</li>
-      <li>ChromaDB</li>
-    </ul>
-  </div>
-  <!-- End #skills -->
-
-  <div id="publications" class="background-alt">
-    <h2 class="heading">Publications</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h4>
-            Arshad Saad, Shamsa Abid, &amp; Shafay Shamail, "CodeBERT for Code
-            Clone Detection: A Replication Study," IWSC, IEEE, 2022.
-          </h4>
-          <h4>
-            Rabbani, Sohaib Masood, Nabeel Ahmad Gulzar, Saad Arshad, Shamsa
-            Abid, and Shafay Shamail, "A Comparative Analysis of Clone
-            Detection Techniques on Semantic Clone Bench," IWSC, IEEE, 2022.
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End #publications -->
-
-  <div id="contact">
-    <h2>Get in Touch</h2>
-    <div id="contact-form">
-      <form action="mailto:saad.arshad102@gmail.com" method="post" enctype="text/plain">
-        <input type="hidden" name="_subject" value="Contact request from personal website" />
-        <input type="email" name="_replyto" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-    <!-- End #contact-form -->
-  </div>
-  <!-- End #contact -->
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 copyright">
-          <p>
-            Copyright &copy; 2026 Saad Arshad
-          </p>
-        </div>
-        <div class="col-sm-2 top">
-          <span id="to-top">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-          </span>
-        </div>
-        <div class="col-sm-5 social">
-          <ul>
-            <li>
-              <a href="https://github.com/saadarshad102" target="_blank"><i class="fa fa-github"
-                  aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/saadarshad102/" target="_blank"><i class="fa fa-linkedin"
-                  aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/saad.arshad.944" target="_blank"><i class="fa fa-facebook"
-                  aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://medium.com/@saad.arshad102" target="_blank"><i class="fa fa-medium  fa-1.9x"
-                  aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End footer -->
-
-  <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
-      } else {
-        document.getElementById("header").style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
+  @media (max-width:760px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0;
+      flex-direction:column; gap:0;
+      background:var(--surface); border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; transition:max-height .3s ease;
     }
-  </script>
-  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
-  <script src="js/scripts.min.js"></script>
+    .nav-links a{ padding:14px 28px; display:block; border-top:1px solid var(--line); }
+    #nav-toggle:checked ~ .nav-links{ max-height:400px; }
+    .burger{ display:block; }
+  }
 
+  /* HERO */
+  #hero{
+    position:relative; min-height:100vh;
+    display:flex; align-items:center;
+    overflow:hidden;
+    padding-top:70px;
+  }
+  #hero canvas{ position:absolute; inset:0; opacity:0.55; }
+  .hero-content{ position:relative; z-index:2; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--teal); font-size:13px; letter-spacing:0.12em; text-transform:uppercase;
+    margin-bottom:18px; display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{
+    content:''; width:26px; height:1px; background:var(--teal);
+  }
+  #hero h1{
+    font-size:clamp(42px, 7vw, 80px);
+    font-weight:700;
+    line-height:1.02;
+  }
+  #hero h2{
+    font-weight:400; font-size:clamp(18px, 2.4vw, 26px);
+    color:var(--muted); margin-top:18px; max-width:640px;
+  }
+  #hero h2 .accent{ color:var(--amber); font-weight:600; }
+  .hero-links{ display:flex; gap:14px; margin-top:36px; flex-wrap:wrap; }
+  .icon-link{
+    width:44px; height:44px; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line); background:var(--surface);
+    font-size:17px; color:var(--muted); transition:.2s;
+  }
+  .icon-link:hover{ color:var(--ink); background:var(--amber); border-color:var(--amber); transform:translateY(-2px); }
+  .scroll-hint{
+    position:absolute; bottom:34px; left:50%; transform:translateX(-50%);
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--muted);
+    letter-spacing:.1em; text-transform:uppercase;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+  }
+  .scroll-hint .line{ width:1px; height:28px; background:linear-gradient(var(--muted), transparent); animation:pulse-line 2s infinite; }
+  @keyframes pulse-line{ 0%,100%{opacity:.3} 50%{opacity:1} }
+
+  /* SECTION SHELL */
+  section{ padding:110px 0; position:relative; }
+  .section-head{ margin-bottom:56px; }
+  .tag{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--amber);
+    text-transform:uppercase; letter-spacing:0.14em; margin-bottom:10px; display:block;
+  }
+  .section-head h2{ font-size:clamp(28px,4vw,38px); }
+  .rule{ height:1px; background:var(--line); border:0; margin:0 0 110px; }
+
+  /* ABOUT */
+  #about .about-grid{
+    display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:start;
+  }
+  #about p{ color:var(--muted); font-size:16px; margin:0 0 18px; }
+  #about p strong{ color:var(--text); font-weight:600; }
+  .stat-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .stat-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px; position:relative; overflow:hidden;
+  }
+  .stat-card::after{
+    content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--teal);
+  }
+  .stat-num{ font-family:'Space Grotesk', sans-serif; font-size:26px; font-weight:700; color:var(--amber); }
+  .stat-label{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--muted); margin-top:6px; text-transform:uppercase; letter-spacing:.04em; }
+  @media (max-width:760px){ #about .about-grid{ grid-template-columns:1fr; } }
+
+  /* EXPERIENCE TIMELINE */
+  .timeline{ position:relative; padding-left:34px; border-left:1px solid var(--line); }
+  .t-item{ position:relative; padding-bottom:52px; }
+  .t-item:last-child{ padding-bottom:0; }
+  .t-item::before{
+    content:''; position:absolute; left:-39px; top:4px;
+    width:11px; height:11px; border-radius:50%;
+    background:var(--ink); border:2px solid var(--teal);
+  }
+  .t-item.current::before{ background:var(--amber); border-color:var(--amber); box-shadow:0 0 0 4px rgba(255,180,84,0.18); }
+  .t-date{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--teal); letter-spacing:.04em; }
+  .t-item h3{ font-size:21px; margin-top:6px; }
+  .t-item h4{ font-family:'Inter',sans-serif; font-weight:500; font-size:14.5px; color:var(--muted); margin-top:3px; }
+  .t-item ul{ margin:16px 0 0; padding-left:18px; color:var(--muted); font-size:14.5px; }
+  .t-item li{ margin-bottom:8px; }
+  .t-item li::marker{ color:var(--amber); }
+
+  /* EDUCATION */
+  .edu-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .edu-card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:26px; }
+  .edu-card h3{ font-size:18px; }
+  .edu-card .edu-date{ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--teal); margin-top:8px; display:block; }
+  .edu-card h4{ font-weight:500; font-size:14.5px; color:var(--text); margin-top:10px; }
+  .edu-card p{ color:var(--muted); font-size:14px; margin-top:10px; }
+  @media (max-width:760px){ .edu-grid{ grid-template-columns:1fr; } }
+
+  /* PROJECTS */
+  .proj-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .proj-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px; transition:.2s; position:relative;
+  }
+  .proj-card:hover{ border-color:var(--teal); transform:translateY(-3px); }
+  .proj-card h3{ font-size:19px; margin-bottom:10px; }
+  .proj-card p{ color:var(--muted); font-size:14.5px; margin:0; }
+  .proj-link{ display:inline-flex; align-items:center; gap:6px; margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--amber); }
+  .proj-link i{ font-size:11px; }
+  @media (max-width:760px){ .proj-grid{ grid-template-columns:1fr; } }
+
+  /* SKILLS */
+  .skill-cats{ display:grid; grid-template-columns:1fr 1fr; gap:28px 40px; }
+  .skill-cat .tag{ margin-bottom:14px; }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:9px; }
+  .chip{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px;
+    border:1px solid var(--line); border-radius:20px; padding:7px 13px;
+    color:var(--text); background:var(--surface);
+  }
+  @media (max-width:760px){ .skill-cats{ grid-template-columns:1fr; } }
+
+  /* PUBLICATIONS */
+  .pub-item{
+    border-top:1px solid var(--line); padding:22px 0; display:flex; gap:20px; justify-content:space-between; align-items:start;
+  }
+  .pub-item:last-child{ border-bottom:1px solid var(--line); }
+  .pub-title{ font-size:16.5px; font-weight:600; }
+  .pub-meta{ color:var(--muted); font-size:13.5px; margin-top:8px; }
+  .pub-venue{ font-family:'IBM Plex Mono', monospace; color:var(--teal); font-size:12px; margin-top:8px; display:inline-block; }
+  .pub-link{
+    flex-shrink:0; width:38px; height:38px; border-radius:9px;
+    border:1px solid var(--line); display:flex; align-items:center; justify-content:center;
+    color:var(--muted); transition:.2s;
+  }
+  .pub-link:hover{ color:var(--ink); background:var(--amber); border-color:var(--amber); }
+  @media (max-width:600px){ .pub-item{ flex-direction:column; } }
+
+  /* CONTACT */
+  #contact{ text-align:center; }
+  #contact h2{ font-size:clamp(30px,5vw,46px); }
+  #contact p{ color:var(--muted); margin-top:16px; max-width:480px; margin-left:auto; margin-right:auto; }
+  .contact-cta{
+    display:inline-flex; align-items:center; gap:10px; margin-top:34px;
+    background:var(--amber); color:var(--ink); font-weight:600;
+    padding:14px 28px; border-radius:10px; font-size:15px;
+    transition:.2s;
+  }
+  .contact-cta:hover{ transform:translateY(-2px); }
+  .contact-socials{ display:flex; gap:14px; justify-content:center; margin-top:30px; }
+
+  footer{
+    border-top:1px solid var(--line); padding:28px 0; text-align:center;
+    color:var(--muted); font-family:'IBM Plex Mono',monospace; font-size:12px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand mono">saad<span class="dot">.</span>arshad</div>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="burger"><i class="fa fa-bars"></i></label>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="hero">
+  <canvas id="net"></canvas>
+  <div class="container hero-content">
+    <span class="eyebrow">Islamabad, Pakistan &middot; Remote since 2019</span>
+    <h1>Saad Arshad</h1>
+    <h2>Senior AI/ML Engineer building <span class="accent">production NLP, agentic AI</span> &amp; multi-agent LLM systems.</h2>
+    <div class="hero-links">
+      <a class="icon-link" href="https://github.com/saadarshad102" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a class="icon-link" href="https://www.linkedin.com/in/saadarshad102/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="icon-link" href="https://medium.com/@saad.arshad102" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+      <a class="icon-link" href="mailto:saad.arshad102@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="line"></div></div>
+</section>
+
+<div class="container">
+<section id="about">
+  <div class="section-head">
+    <span class="tag">01 &middot; About</span>
+    <h2>NLP, agentic AI, and production-scale systems.</h2>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>
+        Highly accomplished AI/ML Engineer with over <strong>6 years of experience</strong>
+        specializing in Natural Language Processing, Agentic AI, and Large
+        Language Models. I focus on the end-to-end design, development, and
+        deployment of scalable, production-ready AI solutions.
+      </p>
+      <p>
+        I'm currently <strong>AI (NLP) Technical Lead at Intelligent Relations</strong>,
+        where I lead the architecture of Preston, an AI-powered PR
+        automation platform. I thrive in async-first teams and have worked
+        remotely with international companies since 2019.
+      </p>
+      <p>
+        On the side, I'm building <strong>Authr</strong>, a content-intelligence
+        SaaS that crawls a brand's blog and competitor blogs, clusters
+        content into a vector space, identifies coverage gaps, clones brand
+        voice, and drafts SEO-linked posts.
+      </p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-num">6+</div><div class="stat-label">Years in NLP / LLMs</div></div>
+      <div class="stat-card"><div class="stat-num">9&ndash;10M</div><div class="stat-label">Articles processed / month</div></div>
+      <div class="stat-card"><div class="stat-num">500K+</div><div class="stat-label">Journalist profiles</div></div>
+      <div class="stat-card"><div class="stat-num">900+</div><div class="stat-label">Category taxonomy</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="experience">
+  <div class="section-head">
+    <span class="tag">02 &middot; Experience</span>
+    <h2>Career timeline.</h2>
+  </div>
+  <div class="timeline">
+    <div class="t-item current">
+      <span class="t-date mono">MAR 2024 &mdash; PRESENT</span>
+      <h3>Intelligent Relations</h3>
+      <h4>AI (NLP) Technical Lead &middot; Remote</h4>
+      <ul>
+        <li>Led the end-to-end architecture and deployment of Preston, an AI-powered PR automation platform delivering multi-agent chat, automated journalist outreach and replies, media monitoring, semantic search-based recommendations, and personalized pitch generation.</li>
+        <li>Built a multi-agent chat interface enabling users to perform any platform action through natural language &mdash; searching journalists, launching campaigns, monitoring coverage, and generating pitches.</li>
+        <li>Designed a campaign creation workflow that reduced manual effort by 90%, automating journalist targeting, pitch drafting, and follow-up strategy.</li>
+        <li>Built PR Deep Dive, an agent-based research automation system that cut manual research effort from hours to minutes.</li>
+        <li>Developed a hierarchical categorization system spanning 900+ categories, improving search relevance by 25%.</li>
+        <li>Managed the full MLOps lifecycle across AWS (Fargate, Lambda, EC2), Docker, and FastAPI.</li>
+      </ul>
+    </div>
+    <div class="t-item">
+      <span class="t-date mono">JUN 2022 &mdash; MAR 2024</span>
+      <h3>Intelligent Relations</h3>
+      <h4>ML/NLP Engineer &middot; Remote</h4>
+      <ul>
+        <li>Engineered high-throughput NLP pipelines analyzing 9&ndash;10 million articles per month to build dynamic profiles for 500,000+ journalists, publications, and podcasts.</li>
+        <li>Developed an AI pitch generator that analyzes successful pitches to generate on-brand outreach emails, reducing pitch writing time by 80%.</li>
+        <li>Built a journalist recommendation engine that dynamically updates query representations using user feedback and engagement signals.</li>
+        <li>Developed Chat with Preston, an LLM-powered assistant for complex PR-related queries.</li>
+      </ul>
+    </div>
+    <div class="t-item">
+      <span class="t-date mono">NOV 2021 &mdash; JUN 2022</span>
+      <h3>Lahore University of Management Sciences (LUMS)</h3>
+      <h4>Graduate Research Assistant &middot; Onsite</h4>
+      <ul>
+        <li>Collected and curated the first benchmark dataset for Urdu abstractive news summarization &mdash; 180,000 news and summary pairs.</li>
+        <li>Performed lossless compression and language adaptation of the mT5 model, reducing parameters by 50% while maintaining accuracy.</li>
+        <li>Pre-trained mT5 with a denoising objective and fine-tuned it for abstractive summarization, significantly improving ROUGE scores.</li>
+      </ul>
+    </div>
+    <div class="t-item">
+      <span class="t-date mono">SEP 2020 &mdash; NOV 2021</span>
+      <h3>Vertical Solutions</h3>
+      <h4>ML/NLP Engineer &middot; Remote</h4>
+      <ul>
+        <li>Trained multi-label text classification models to categorize legal invoice clauses.</li>
+        <li>Developed a scoring and recommendation pipeline for legal contract clauses.</li>
+        <li>Fine-tuned semantic similarity models to detect and correct wrong legal codes.</li>
+      </ul>
+    </div>
+    <div class="t-item">
+      <span class="t-date mono">MAY 2019 &mdash; SEP 2020</span>
+      <h3>Automotive Artificial Intelligence (AAI) GmbH</h3>
+      <h4>ML/NLP Engineer &middot; Remote</h4>
+      <ul>
+        <li>Developed and deployed a domain-specific conversational AI system with integrated speech recognition and synthesis.</li>
+        <li>Managed API development and deployment on AWS infrastructure.</li>
+        <li>Fine-tuned object detection models for industry-specific automotive use cases.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="education">
+  <div class="section-head">
+    <span class="tag">03 &middot; Education</span>
+    <h2>Academic background.</h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <h3>Lahore University of Management Sciences (LUMS)</h3>
+      <span class="edu-date mono">2020 &mdash; 2022</span>
+      <h4>MS in Computer Science</h4>
+      <p>Thesis: "Urdu Abstractive News Summarization" &mdash; curated a 180k-pair dataset, pre-trained &amp; compressed mT5 (50% parameter reduction) with preserved ROUGE scores. GPA: 3.84 &middot; Major: AI, NLP &middot; Dean's Honour List.</p>
+    </div>
+    <div class="edu-card">
+      <h3>National University of Computer &amp; Emerging Sciences (FAST)</h3>
+      <span class="edu-date mono">2015 &mdash; 2019</span>
+      <h4>BS in Computer Science</h4>
+      <p>GPA: 3.59 &middot; Dean's List: Fall 2015, 2017 &amp; 2018 &mdash; Spring 2018 &amp; 2019.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="projects">
+  <div class="section-head">
+    <span class="tag">04 &middot; Projects</span>
+    <h2>Selected work.</h2>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <h3>Preston</h3>
+      <p>AI-powered PR automation platform delivering multi-agent chat, automated journalist outreach, media monitoring, semantic search-based recommendations, and personalized pitch generation &mdash; cutting campaign workflow effort by 90%.</p>
+    </div>
+    <div class="proj-card">
+      <h3>KeyCrew</h3>
+      <p>Led development of KeyCrew's AI article generation system, producing perspective, feature, consumer, and press release content from interview transcripts, plus a sales intelligence pipeline identifying prospects from article content and expert mentions.</p>
+    </div>
+    <div class="proj-card">
+      <h3>Authr</h3>
+      <p>A content-intelligence SaaS that crawls a brand's blog and competitor blogs, clusters content into a vector space, identifies coverage gaps, clones brand voice, and drafts SEO-linked posts.</p>
+    </div>
+    <div class="proj-card">
+      <h3>Retrieval Pipeline Evaluation</h3>
+      <p>Comparative analysis of dense, sparse, RRF, and DBSF retrieval methods for a PR/media monitoring product, resulting in a production multi-query merge algorithm with tier-based deduplication and recency tiebreaking.</p>
+    </div>
+    <div class="proj-card">
+      <h3>Fake News Detection (USE)</h3>
+      <p>Fake news detection using Google's Universal Sentence Encoder and a simple neural network.</p>
+      <a class="proj-link" href="https://github.com/saadarshad102/Fake-News-Detection-Universal-Sentence-Encoder" target="_blank">View on GitHub <i class="fa fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="proj-card">
+      <h3>Chatbot (Seq2Seq)</h3>
+      <p>A chatbot developed using a seq2seq encoder-decoder architecture.</p>
+      <a class="proj-link" href="https://github.com/saadarshad102/Chatbot-Seq2Seq" target="_blank">View on GitHub <i class="fa fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="skills">
+  <div class="section-head">
+    <span class="tag">05 &middot; Skills</span>
+    <h2>Tools &amp; technologies.</h2>
+  </div>
+  <div class="skill-cats">
+    <div class="skill-cat">
+      <span class="tag">AI / NLP / LLMs</span>
+      <div class="chip-row">
+        <span class="chip">Large Language Models</span>
+        <span class="chip">Transformers</span>
+        <span class="chip">RAG</span>
+        <span class="chip">Semantic Search</span>
+        <span class="chip">Embeddings</span>
+        <span class="chip">AI Agents</span>
+        <span class="chip">Prompt Engineering</span>
+        <span class="chip">LoRA / PEFT</span>
+        <span class="chip">Model Quantization</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <span class="tag">MLOps &amp; Serving</span>
+      <div class="chip-row">
+        <span class="chip">Docker</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">Model Deployment</span>
+        <span class="chip">Monitoring &amp; Observability</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <span class="tag">Frameworks &amp; Libraries</span>
+      <div class="chip-row">
+        <span class="chip">PyTorch</span>
+        <span class="chip">Hugging Face</span>
+        <span class="chip">LangChain</span>
+        <span class="chip">Scikit-Learn</span>
+        <span class="chip">SpaCy</span>
+        <span class="chip">Pandas</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <span class="tag">Data &amp; Infrastructure</span>
+      <div class="chip-row">
+        <span class="chip">AWS EC2 / S3</span>
+        <span class="chip">Bedrock</span>
+        <span class="chip">Fargate / Lambda</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">MongoDB</span>
+        <span class="chip">Pinecone</span>
+        <span class="chip">ChromaDB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="publications">
+  <div class="section-head">
+    <span class="tag">06 &middot; Publications</span>
+    <h2>IEEE research.</h2>
+  </div>
+  <div>
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">CodeBERT for Code Clone Detection: A Replication Study</div>
+        <div class="pub-meta">Saad Arshad, Shamsa Abid, Shafay Shamail</div>
+        <span class="pub-venue mono">IEEE 16th International Workshop on Software Clones (IWSC), 2022</span>
+      </div>
+      <a class="pub-link" href="https://ieeexplore.ieee.org/document/9978260/" target="_blank" aria-label="Read on IEEE Xplore"><i class="fa fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">A Comparative Analysis of Clone Detection Techniques on SemanticCloneBench</div>
+        <div class="pub-meta">Sohaib Masood Rabbani, Nabeel Ahmad Gulzar, Saad Arshad, Shamsa Abid, Shafay Shamail</div>
+        <span class="pub-venue mono">IEEE 16th International Workshop on Software Clones (IWSC), 2022</span>
+      </div>
+      <a class="pub-link" href="https://ieeexplore.ieee.org/document/9978250/" target="_blank" aria-label="Read on IEEE Xplore"><i class="fa fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="contact">
+  <span class="tag" style="text-align:center; display:block;">07 &middot; Contact</span>
+  <h2>Let's build something.</h2>
+  <p>Open to conversations about AI engineering roles, collaborations, or anything agentic-AI related. Reach out directly &mdash; I read every message.</p>
+  <a class="contact-cta" href="mailto:saad.arshad102@gmail.com"><i class="fa fa-envelope"></i> saad.arshad102@gmail.com</a>
+  <div class="contact-socials">
+    <a class="icon-link" href="https://github.com/saadarshad102" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a class="icon-link" href="https://www.linkedin.com/in/saadarshad102/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a class="icon-link" href="https://medium.com/@saad.arshad102" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+  </div>
+</section>
+</div>
+
+<footer>
+  <div class="container">&copy; 2026 Saad Arshad &middot; Built with intent, not a template.</div>
+</footer>
+
+<script>
+  // Subtle animated node-graph background for the hero, evoking embedding /
+  // multi-agent connection space.
+  (function(){
+    var canvas = document.getElementById('net');
+    var ctx = canvas.getContext('2d');
+    var w, h, nodes;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function resize(){
+      w = canvas.width = canvas.offsetWidth * devicePixelRatio;
+      h = canvas.height = canvas.offsetHeight * devicePixelRatio;
+    }
+
+    function init(){
+      resize();
+      var count = Math.max(18, Math.floor((w*h) / 90000));
+      nodes = [];
+      for(var i=0;i<count;i++){
+        nodes.push({
+          x: Math.random()*w,
+          y: Math.random()*h,
+          vx: (Math.random()-0.5)*0.25*devicePixelRatio,
+          vy: (Math.random()-0.5)*0.25*devicePixelRatio,
+          r: (Math.random()*1.6+1)*devicePixelRatio
+        });
+      }
+    }
+
+    function step(){
+      ctx.clearRect(0,0,w,h);
+      for(var i=0;i<nodes.length;i++){
+        var n = nodes[i];
+        if(!reduceMotion){
+          n.x += n.vx; n.y += n.vy;
+          if(n.x<0||n.x>w) n.vx*=-1;
+          if(n.y<0||n.y>h) n.vy*=-1;
+        }
+      }
+      for(var i=0;i<nodes.length;i++){
+        for(var j=i+1;j<nodes.length;j++){
+          var a=nodes[i], b=nodes[j];
+          var dx=a.x-b.x, dy=a.y-b.y;
+          var dist=Math.sqrt(dx*dx+dy*dy);
+          var maxDist = 170*devicePixelRatio;
+          if(dist<maxDist){
+            ctx.strokeStyle = 'rgba(110,231,216,' + (0.16*(1-dist/maxDist)) + ')';
+            ctx.lineWidth = devicePixelRatio*0.6;
+            ctx.beginPath();
+            ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y);
+            ctx.stroke();
+          }
+        }
+      }
+      for(var i=0;i<nodes.length;i++){
+        var n = nodes[i];
+        ctx.fillStyle = 'rgba(255,180,84,0.85)';
+        ctx.beginPath();
+        ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+        ctx.fill();
+      }
+      if(!reduceMotion) requestAnimationFrame(step);
+    }
+
+    init();
+    step();
+    window.addEventListener('resize', function(){ init(); if(reduceMotion) step(); });
+  })();
+</script>
 
 </body>
-
 </html>
